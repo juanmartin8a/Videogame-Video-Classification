@@ -12,7 +12,7 @@ The model works with a 4 step approach:
         - 25 frames can still capture good data :D
 
   2. ### Feature extraction
-      Frame information is extracted as a high-dimensional vector (image embedding) using the pre-trained **ImageResNetV2** convolutional neural network (CNN) which was further trained on a tailored dataset to classify images into 21 different videogames. This is done for all 25 frames.
+      Frame information is extracted as a high-dimensional vector (image embedding) using the ResNet101 convolutional neural network (CNN) architecture which was trained on a tailored dataset to classify images into 21 different videogames. This is done for all 25 frames.
 
   3. ### Sequence modeling
       The embeddings are processed by a Long Short-Term Memory (LSTM) recurrent neural network (RNN) to capture temporal data across frames.
@@ -27,4 +27,7 @@ This AI model makes use of two models:
   - ### Sequence Classifier:
     Processes the sequence of embeddings and assigns a videogame class to the entire video.
 
-Both models were trained on Kaggle for free, which limited the amount of computational resources available.
+Both models were trained on Google Colab's free tier, which limited the amount of computational resources available.
+
+## Disclaimer
+Unfortunately I was unable to find the weights for the Sequence Classifier, I probably deleted them long ago :(. However, I was able to find the weights for the ResNet101 model used as a feature extractor :D
