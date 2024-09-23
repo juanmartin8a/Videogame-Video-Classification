@@ -1,6 +1,17 @@
 # Videogame Video Classification
 This Artificial Neural Network (ANN) is designed to classify videogame videos into 21 different classes (videogames)! It was specifically developed for [Clivy](https://github.com/juanmartin8a/Clivy) to automate videogame video classification when uploading a clip.
 
+## Model Components
+This AI model makes use of two models:
+  - ### Feature Extractor:
+    Extracts feature embeddings for each frame using the pretrained CNN.
+    
+    **Model**: [Google drive link](https://drive.google.com/file/d/1pBWPHWTvzMKZa9pcByVRwIxGbFPWWzN0/view?usp=sharing)
+  - ### Sequence Classifier:
+    Processes the sequence of embeddings and assigns a videogame class to the entire video.
+
+Both models were trained on Google Colab's free tier, which limited the amount of computational resources available.
+
 ## Model Workflow
 The model works with a 4 step approach:
   1. ### Data pre-processing
@@ -19,15 +30,6 @@ The model works with a 4 step approach:
 
   4. ### Classification
       The output from the RNN is used to assign the processed video to 1 of the 21 videogames :)
-
-## Model Components
-This AI model makes use of two models:
-  - ### Feature Extractor:
-    Extracts feature embeddings for each frame using the pretrained CNN.
-  - ### Sequence Classifier:
-    Processes the sequence of embeddings and assigns a videogame class to the entire video.
-
-Both models were trained on Google Colab's free tier, which limited the amount of computational resources available.
 
 ## Disclaimer
 Unfortunately I was unable to find the weights for the Sequence Classifier, I probably deleted them long ago :(. However, I was able to find the weights for the ResNet101 model used as a feature extractor :D
