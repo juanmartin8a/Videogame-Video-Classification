@@ -6,13 +6,13 @@ This AI model makes use of two models:
   - ### Feature Extractor:
     Extracts a high-dimensional vector (image embedding) for each frame using the ResNet101 convolutional neural network (CNN) architecture which was trained on a tailored dataset to classify images into 21 different videogames.
     
-    **Model**: [Google drive link](https://drive.google.com/file/d/1pBWPHWTvzMKZa9pcByVRwIxGbFPWWzN0/view?usp=sharing)
+    **Model weights**: [Google drive link](https://drive.google.com/file/d/1pBWPHWTvzMKZa9pcByVRwIxGbFPWWzN0/view?usp=sharing)
     
     **Dataset used for training**: [Kaggle link](https://www.kaggle.com/datasets/juanmartinzabala/videogame-image-classification)
   - ### Sequence Classifier:
     Processes the sequence of embeddings and assigns a videogame class to the entire video.
 
-    **Model**: *Not available :/*
+    **Model weights**: *Not available :/*
     
      **Dataset used for training**: [Kaggle link](https://www.kaggle.com/datasets/juanmartinzabala/videogamesvideosdataset)
 
