@@ -39,4 +39,4 @@ The model works with a 4 step approach:
       The output from the RNN is used to assign the processed video to 1 of the 21 videogames. This and the previous step are a single ANN.
 
 ## Disclaimer
-Unfortunately, I was unable to find the weights for the Sequence Classifier, I probably deleted them long ago :(. However, I was able to find the weights for the ResNet101 model used as a feature extractor :D
+Unfortunately, I was unable to find the weights for the Sequence Classifier, I probably deleted them long ago :(. However, you can get your own weights by training the model using the [jupiter notebook (videogame-video-classiification-train.ipynb)](https://github.com/juanmartin8a/Videogame-Video-Classification/blob/main/videogame-video-classiification-train.ipynb) provided in this repository and the dataset that can be found in this [Kaggle link](https://www.kaggle.com/datasets/juanmartinzabala/videogamesvideosdataset) :D
