@@ -1,7 +1,7 @@
 # Videogame Video Classification
 This Artificial Neural Network (ANN) is designed to classify videogame videos into 21 different classes (videogames)! It was specifically developed for [Clivy](https://github.com/juanmartin8a/Clivy) to automate videogame video classification when uploading a clip.
 
-## Model Components
+## Model
 This AI model makes use of two models:
   - ### Feature Extractor:
     Extracts a high-dimensional vector (image embedding) for each frame using the ResNet101 convolutional neural network (CNN) architecture which was trained on a tailored dataset to classify images into 21 different videogames.
