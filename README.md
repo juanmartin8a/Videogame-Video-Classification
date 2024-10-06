@@ -1,4 +1,7 @@
 # Videogame Video Classification
+![Started](https://img.shields.io/badge/Started-Jul%202021-blue%20green.svg)
+![Last Updated](https://img.shields.io/badge/Last%20Updated-Aug%202021-blue.svg?color=informational)
+
 This Artificial Neural Network (ANN) is designed to classify videogame videos into 21 different classes (videogames)! It was specifically developed for [Clivy](https://github.com/juanmartin8a/Clivy) to automate videogame video classification when uploading a clip.
 
 ## Model
