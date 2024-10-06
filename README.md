@@ -1,19 +1,22 @@
 # Videogame Video Classification
-![Started](https://img.shields.io/badge/Started-Jul%202021-blue%20green.svg)
-![Last Updated](https://img.shields.io/badge/Last%20Updated-Aug%202021-blue.svg?color=informational)
+![Started](https://img.shields.io/badge/Started-Feb%202021-blue%20green.svg)
+![Last Updated](https://img.shields.io/badge/Last%20Updated-Sep%202021-blue.svg?color=informational)
 
-This Artificial Neural Network (ANN) is designed to classify videogame videos into 21 different classes (videogames)! It was specifically developed for [Clivy](https://github.com/juanmartin8a/Clivy) to automate videogame video classification when uploading a clip.
+This Artificial Neural Network (ANN) is designed to classify videogame videos into 21 different classes (videogames)! It was specifically developed for [Clivy](https://github.com/juanmartin8a/Clivy) to automate videogame video classification when uploading a clip. The simpler version with only videogame image classification was used in the [first version of Clivy](https://github.com/juanmartin8a/Clivy-v0.0.1-Serverless) which, for testing, used only images and not videos.
 
 ## Model
 This AI model makes use of two models:
   - ### Feature Extractor:
-    Extracts a high-dimensional vector (image embedding) for each frame using the ResNet101 convolutional neural network (CNN) architecture which was trained on a tailored dataset to classify images into 21 different videogames.
+    Extracts a high-dimensional vector (image embedding) for each frame using the ResNet101 convolutional neural network (CNN) architecture which was trained on a tailored dataset to classify images into 21 different videogames. This model was made and trained around February of 2021.
     
-    **Model weights**: [Google drive link](https://drive.google.com/file/d/1pBWPHWTvzMKZa9pcByVRwIxGbFPWWzN0/view?usp=sharing)
+    **Model weights**: [Google Drive link](https://drive.google.com/file/d/1pBWPHWTvzMKZa9pcByVRwIxGbFPWWzN0/view?usp=sharing)
     
     **Dataset used for training**: [Kaggle link](https://www.kaggle.com/datasets/juanmartinzabala/videogame-image-classification)
+
+    **TFLite model**: [Google Drive link](https://drive.google.com/file/d/187slxm6E7Hq6JG-GOV5Mp_W3tTxDRLws/view?usp=sharing)
+    
   - ### Sequence Classifier:
-    Processes the sequence of embeddings and assigns a videogame class to the entire video.
+    Processes the sequence of embeddings and assigns a videogame class to the entire video. This model was made and trained from July of 2021 to September of 2021
 
     **Model weights**: *Not available :/*
     
